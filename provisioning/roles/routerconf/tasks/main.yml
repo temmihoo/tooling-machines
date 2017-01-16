@@ -1,4 +1,4 @@
 ---
  - name: install packaged software
    action: pkgng name={{ item }}
-   with_items: zsh
+   with_items: dnsmasq

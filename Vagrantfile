@@ -16,10 +16,10 @@ Vagrant.configure(2) do |config|
   end
 
 
-  config.vm.define "tftp" do |tftp|
-    tftp.vm.host_name = "tftp"
-    tftp.vm.provision "shell", inline: "echo y | pkg install python"
-    tftp.vm.provision "ansible" do |ansible|
+  config.vm.define "routerconf" do |routerconf|
+    routerconf.vm.host_name = "routerconf"
+    routerconf.vm.provision "shell", inline: "echo y | pkg install python"
+    routerconf.vm.provision "ansible" do |ansible|
       ansible.verbose = "v"
       ansible.playbook = "provisioning/site.yml"
     end

@@ -6,9 +6,9 @@
   roles:
   - common
 
-- hosts: tftp
+- hosts: routerconf
   become: yes
   vars:
     ansible_python_interpreter: /usr/local/bin/python
   roles:
-  - tftp
+  - routerconf
