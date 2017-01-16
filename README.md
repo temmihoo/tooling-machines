@@ -10,4 +10,10 @@ like so:
   brew install Caskroom/cask/virtualbox
   brew install ansible
 
+General idea is to put the data files in mount-vagrant/ which
+is mounted in /vagrant for all guest machines.
+
+The files in there are your data and are git ignored. This
+mount is how you can move files back and forth between the
+host and guests.
 
